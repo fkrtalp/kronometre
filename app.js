@@ -45,38 +45,36 @@ play.addEventListener("click", () => {
 
 reset.addEventListener("click", () => {
   audio.pause();
-clearInterval(timer);
-//   mSeconds = 0;
-//   seconds = 0;
-//   minutes = 0;
+  clearInterval(timer);
+  mSeconds = 0;
+  seconds = 0;
+  minutes = 0;
   run = false;
   clock.textContent = "00:00:00";
   play.innerHTML = `<i class="fa-solid fa-circle-play"></i>`;
 });
 
-play.onmouseover = function() {
-    play.style.color = "red";
-    play.style.cursor = "pointer";
-    play.style.transform = "scale(1.4, 1.4)";
-    play.style.marginRight = "3rem";
-}
+play.onmouseover = function () {
+  play.style.color = "red";
+  play.style.cursor = "pointer";
+  play.style.transform = "scale(1.4, 1.4)";
+  play.style.marginRight = "3rem";
+};
 
-play.onmouseout = function() {
-    play.style.color = "black";
-    play.style.transform = "scale(1,1)";
-    play.style.marginRight = "1rem";
+play.onmouseout = function () {
+  play.style.color = "black";
+  play.style.transform = "scale(1,1)";
+  play.style.marginRight = "1rem";
+};
+reset.onmouseover = function () {
+  reset.style.color = "red";
+  reset.style.cursor = "pointer";
+  reset.style.transform = "scale(1.4, 1.4)";
+  reset.style.marginLeft = "3rem";
+};
 
-}
-reset.onmouseover = function() {
-    reset.style.color = "red";
-    reset.style.cursor = "pointer";
-    reset.style.transform = "scale(1.4, 1.4)";
-    reset.style.marginLeft = "3rem";
-}
-
-reset.onmouseout = function() {
-    reset.style.color = "black";
-    reset.style.transform = "scale(1,1)";
-    reset.style.marginLeft = "0";
-
-}
+reset.onmouseout = function () {
+  reset.style.color = "black";
+  reset.style.transform = "scale(1,1)";
+  reset.style.marginLeft = "0";
+};
