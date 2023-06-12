@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 5rem;
+}
+.container {
+  background-color: burlywood;
+  width: 60%;
+  height: 60vh;
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+}
+
+.header {
+  padding-top: 3rem;
+}
+h1 {
+  background-color: wheat;
+  margin: auto;
+  font-size: 2rem;
+  font-weight: 500;
+  border: 2px solid black;
+  border-radius: 20px;
+  width: 40%;
+}
+.clock {
+  font-size: 5rem;
+  margin-top: 3rem;
+}
+.btn {
+  margin-top: 3rem;
+  border-radius: 50%;
+}
+.btn i {
+  font-size: 6rem;
+}
+button {
+  border: 2px solid orangered;
+  border-radius: 50px;
+}
